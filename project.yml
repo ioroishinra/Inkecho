@@ -1,0 +1,78 @@
+name: WagoRenshuchou
+options:
+  bundleIdPrefix: com.fumi
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+
+packages:
+  Core:
+    path: Packages/Core
+  Persistence:
+    path: Packages/Persistence
+  DesignSystem:
+    path: Packages/DesignSystem
+  Features:
+    path: Packages/Features
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+
+targets:
+  WagoRenshuchou-iOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [{ path: Apps/WagoRenshuchou-iOS }]
+    info:
+      path: Apps/WagoRenshuchou-iOS/Info.plist
+      properties:
+        CFBundleDisplayName: 和語練習帖
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UIAppFonts: [KleeOne-Regular.ttf]
+        ITSAppUsesNonExemptEncryption: false
+    entitlements:
+      path: Apps/WagoRenshuchou-iOS/WagoRenshuchou.entitlements
+    dependencies:
+      - package: Features
+        product: AppShell
+      - package: Persistence
+        product: Persistence
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fumi.wagoren
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+
+  WagoRenshuchou-macOS:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources: [{ path: Apps/WagoRenshuchou-macOS }]
+    info:
+      path: Apps/WagoRenshuchou-macOS/Info.plist
+      properties:
+        CFBundleDisplayName: 和語練習帖
+        LSMinimumSystemVersion: "14.0"
+        NSHumanReadableCopyright: ""
+        NSPrincipalClass: NSApplication
+    entitlements:
+      path: Apps/WagoRenshuchou-macOS/WagoRenshuchou.entitlements
+    dependencies:
+      - package: Features
+        product: AppShell
+      - package: Persistence
+        product: Persistence
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fumi.wagoren.macos
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MACOSX_DEPLOYMENT_TARGET: "14.0"

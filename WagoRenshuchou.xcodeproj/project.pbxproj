@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DE6F064618B3104FFD3019 /* WagoRenshuchouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A783E1FB2C3F9DD79F5231 /* WagoRenshuchouApp.swift */; };
+		0F16A1271A830257D47C32E7 /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = D093402D60CB3317EE3C470C /* AppShell */; };
+		1533D7895E70C0412BCDB033 /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = ACFCB6642B783AD654FF1664 /* AppShell */; };
+		238FA046F0F21CBEBBBB6E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BDB86E600EE2D37996A356 /* Assets.xcassets */; };
+		2B74ADC746D04E309676212B /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 493CF2EE79F2048520D17894 /* Persistence */; };
+		646BFE076FEAF3DD98AA1735 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 37D355CC80B382A54645175C /* Persistence */; };
+		8142C4E9B97A9B546F75BD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC9BADBA35F01A32549EB03 /* Assets.xcassets */; };
+		F5FC56D347D9E5E688D45B9E /* WagoRenshuchouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA933066AF6799C2E0227A90 /* WagoRenshuchouApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		185A83C88753156974A8FBE1 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DesignSystem; path = Packages/DesignSystem; sourceTree = SOURCE_ROOT; };
+		18FADB78EA497805A517A3ED /* WagoRenshuchou-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "WagoRenshuchou-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		303B421463D77D4425F67A3B /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Features; path = Packages/Features; sourceTree = SOURCE_ROOT; };
+		4A245D690B4702AFBE8E2F4F /* WagoRenshuchou-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WagoRenshuchou-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC9BADBA35F01A32549EB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65915DD04FDA2FBDC897C346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FBBE400400E88B973B63A5F /* WagoRenshuchou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WagoRenshuchou.entitlements; sourceTree = "<group>"; };
+		AA7AFF81BB1BFDAE058B2B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BA933066AF6799C2E0227A90 /* WagoRenshuchouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagoRenshuchouApp.swift; sourceTree = "<group>"; };
+		C255C7F50684FFB3C0216B26 /* WagoRenshuchou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WagoRenshuchou.entitlements; sourceTree = "<group>"; };
+		E21FBE7AD4F57BD9E671A9C5 /* Persistence */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Persistence; path = Packages/Persistence; sourceTree = SOURCE_ROOT; };
+		E9A783E1FB2C3F9DD79F5231 /* WagoRenshuchouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagoRenshuchouApp.swift; sourceTree = "<group>"; };
+		ED629AE72A89F0B0AFAA337E /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Packages/Core; sourceTree = SOURCE_ROOT; };
+		F8BDB86E600EE2D37996A356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29643F69821190A0ADA265AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1533D7895E70C0412BCDB033 /* AppShell in Frameworks */,
+				2B74ADC746D04E309676212B /* Persistence in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6D2540CC962811B48F5401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F16A1271A830257D47C32E7 /* AppShell in Frameworks */,
+				646BFE076FEAF3DD98AA1735 /* Persistence in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59DA9889CA05C1529877AB51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8181275D565CB280202CFA36 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E58E41DBB21812F9F1A7291 /* WagoRenshuchou-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F8BDB86E600EE2D37996A356 /* Assets.xcassets */,
+				AA7AFF81BB1BFDAE058B2B79 /* Info.plist */,
+				9FBBE400400E88B973B63A5F /* WagoRenshuchou.entitlements */,
+				E9A783E1FB2C3F9DD79F5231 /* WagoRenshuchouApp.swift */,
+			);
+			path = "WagoRenshuchou-macOS";
+			sourceTree = "<group>";
+		};
+		6A8286307C884B9BF548B8FF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				ED629AE72A89F0B0AFAA337E /* Core */,
+				185A83C88753156974A8FBE1 /* DesignSystem */,
+				303B421463D77D4425F67A3B /* Features */,
+				E21FBE7AD4F57BD9E671A9C5 /* Persistence */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		72604EC638756FCD62921777 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FADB78EA497805A517A3ED /* WagoRenshuchou-iOS.app */,
+				4A245D690B4702AFBE8E2F4F /* WagoRenshuchou-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8181275D565CB280202CFA36 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AC3A8546D08FA02CDF7BB1EB /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				E7FB9E15BCF548653351789C /* WagoRenshuchou-iOS */,
+				5E58E41DBB21812F9F1A7291 /* WagoRenshuchou-macOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		B53521BF45F12AC932ACA737 = {
+			isa = PBXGroup;
+			children = (
+				AC3A8546D08FA02CDF7BB1EB /* Apps */,
+				6A8286307C884B9BF548B8FF /* Packages */,
+				72604EC638756FCD62921777 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7FB9E15BCF548653351789C /* WagoRenshuchou-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4FC9BADBA35F01A32549EB03 /* Assets.xcassets */,
+				65915DD04FDA2FBDC897C346 /* Info.plist */,
+				C255C7F50684FFB3C0216B26 /* WagoRenshuchou.entitlements */,
+				BA933066AF6799C2E0227A90 /* WagoRenshuchouApp.swift */,
+				59DA9889CA05C1529877AB51 /* Resources */,
+			);
+			path = "WagoRenshuchou-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FE9404EB9922164288ABC9C /* WagoRenshuchou-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48B32EA01A6B8B253360BA16 /* Build configuration list for PBXNativeTarget "WagoRenshuchou-macOS" */;
+			buildPhases = (
+				3174AFDEA7FDEB2538D4A156 /* Sources */,
+				6E52314F089E17D1A895F045 /* Resources */,
+				3F6D2540CC962811B48F5401 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WagoRenshuchou-macOS";
+			packageProductDependencies = (
+				D093402D60CB3317EE3C470C /* AppShell */,
+				37D355CC80B382A54645175C /* Persistence */,
+			);
+			productName = "WagoRenshuchou-macOS";
+			productReference = 4A245D690B4702AFBE8E2F4F /* WagoRenshuchou-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A270F46DFCA915D2496E704D /* WagoRenshuchou-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FC56F534657D34907E2012 /* Build configuration list for PBXNativeTarget "WagoRenshuchou-iOS" */;
+			buildPhases = (
+				9711F32D57AC3161C6346BBA /* Sources */,
+				B1404F98E745DAF14CC4333C /* Resources */,
+				29643F69821190A0ADA265AB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WagoRenshuchou-iOS";
+			packageProductDependencies = (
+				ACFCB6642B783AD654FF1664 /* AppShell */,
+				493CF2EE79F2048520D17894 /* Persistence */,
+			);
+			productName = "WagoRenshuchou-iOS";
+			productReference = 18FADB78EA497805A517A3ED /* WagoRenshuchou-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C89CC1600E27F41612564B81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 71A2627B2D05835D904B503E /* Build configuration list for PBXProject "WagoRenshuchou" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B53521BF45F12AC932ACA737;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				66F9122792A471BF88B6C7B3 /* XCLocalSwiftPackageReference "Packages/Core" */,
+				7E771EEC13A3FAB45E1DCBE6 /* XCLocalSwiftPackageReference "Packages/DesignSystem" */,
+				CC1B2C4CC4CFB89CC894D1A4 /* XCLocalSwiftPackageReference "Packages/Features" */,
+				967BACF25E29D4D2025D3F5A /* XCLocalSwiftPackageReference "Packages/Persistence" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 72604EC638756FCD62921777 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A270F46DFCA915D2496E704D /* WagoRenshuchou-iOS */,
+				0FE9404EB9922164288ABC9C /* WagoRenshuchou-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E52314F089E17D1A895F045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238FA046F0F21CBEBBBB6E90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1404F98E745DAF14CC4333C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8142C4E9B97A9B546F75BD93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3174AFDEA7FDEB2538D4A156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DE6F064618B3104FFD3019 /* WagoRenshuchouApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9711F32D57AC3161C6346BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FC56D347D9E5E688D45B9E /* WagoRenshuchouApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01AA1035EDE2C1DAE50E7D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Apps/WagoRenshuchou-macOS/WagoRenshuchou.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Apps/WagoRenshuchou-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren.macos;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55936D233D8E7A0A6B10530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Apps/WagoRenshuchou-macOS/WagoRenshuchou.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Apps/WagoRenshuchou-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren.macos;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		66575F834F7E5B5D7496F3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Apps/WagoRenshuchou-iOS/WagoRenshuchou.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Apps/WagoRenshuchou-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB79EBBD4FA3238328A246B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		EFDFFDBE0C0299705B68E0BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		FFC8672097D9F8EB2EBF3E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Apps/WagoRenshuchou-iOS/WagoRenshuchou.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Apps/WagoRenshuchou-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08FC56F534657D34907E2012 /* Build configuration list for PBXNativeTarget "WagoRenshuchou-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC8672097D9F8EB2EBF3E9E /* Debug */,
+				66575F834F7E5B5D7496F3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		48B32EA01A6B8B253360BA16 /* Build configuration list for PBXNativeTarget "WagoRenshuchou-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55936D233D8E7A0A6B10530A /* Debug */,
+				01AA1035EDE2C1DAE50E7D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71A2627B2D05835D904B503E /* Build configuration list for PBXProject "WagoRenshuchou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDFFDBE0C0299705B68E0BE /* Debug */,
+				CB79EBBD4FA3238328A246B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		66F9122792A471BF88B6C7B3 /* XCLocalSwiftPackageReference "Packages/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Core;
+		};
+		7E771EEC13A3FAB45E1DCBE6 /* XCLocalSwiftPackageReference "Packages/DesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DesignSystem;
+		};
+		967BACF25E29D4D2025D3F5A /* XCLocalSwiftPackageReference "Packages/Persistence" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Persistence;
+		};
+		CC1B2C4CC4CFB89CC894D1A4 /* XCLocalSwiftPackageReference "Packages/Features" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Features;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37D355CC80B382A54645175C /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+		493CF2EE79F2048520D17894 /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+		ACFCB6642B783AD654FF1664 /* AppShell */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppShell;
+		};
+		D093402D60CB3317EE3C470C /* AppShell */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppShell;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C89CC1600E27F41612564B81 /* Project object */;
+}

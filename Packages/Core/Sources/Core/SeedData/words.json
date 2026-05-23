@@ -1,0 +1,1210 @@
+[
+  {
+    "kanji": "佇む",
+    "reading": "たたずむ",
+    "meaning": "伫立，静静站着",
+    "example": "彼女は窓辺に佇んだまま、何も言わなかった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "揺らぐ",
+    "reading": "ゆらぐ",
+    "meaning": "动摇，摇摆",
+    "example": "その言葉を聞いた瞬間、私の決意が揺らいだ。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "漂う",
+    "reading": "ただよう",
+    "meaning": "飘荡，飘浮",
+    "example": "部屋にコーヒーの香りが漂っていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "滲む",
+    "reading": "にじむ",
+    "meaning": "渗出，（泪水）模糊",
+    "example": "涙で文字が滲んで読めなかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "囁く",
+    "reading": "ささやく",
+    "meaning": "低声细语，耳语",
+    "example": "「大丈夫だよ」と彼は耳元で囁いた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "蠢く",
+    "reading": "うごめく",
+    "meaning": "蠕动，涌动",
+    "example": "暗闇の中で何かが蠢いているような気がした。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "戸惑う",
+    "reading": "とまどう",
+    "meaning": "困惑，不知所措",
+    "example": "突然の告白に、彼女は戸惑いを隠せなかった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "揺らめく",
+    "reading": "ゆらめく",
+    "meaning": "摇曳，闪烁",
+    "example": "ろうそくの炎が静かに揺らめいていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "纏う",
+    "reading": "まとう",
+    "meaning": "缠绕，笼罩",
+    "example": "彼女は夜のような暗さを纏って部屋に入ってきた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "縋る",
+    "reading": "すがる",
+    "meaning": "依附，紧抓",
+    "example": "彼は希望という名の幻想に縋り続けた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "慄く",
+    "reading": "おののく",
+    "meaning": "战栗，（恐惧地）颤抖",
+    "example": "その知らせを聞いて、全身が慄いた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "偲ぶ",
+    "reading": "しのぶ",
+    "meaning": "追忆，怀念",
+    "example": "古いアルバムを眺めながら、亡き友を偲んだ。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "悼む",
+    "reading": "いたむ",
+    "meaning": "悼念，哀悼",
+    "example": "人々は静かに彼の死を悼んだ。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "募る",
+    "reading": "つのる",
+    "meaning": "（情感）愈加强烈",
+    "example": "離れるほど、彼女への思いが募るばかりだった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "滾る",
+    "reading": "たぎる",
+    "meaning": "（热血）沸腾，激涌",
+    "example": "胸の奥で何かが滾るように熱くなった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "蘇る",
+    "reading": "よみがえる",
+    "meaning": "复活，（记忆）复苏",
+    "example": "彼女の笑顔を見た瞬間、古い記憶が蘇った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "萎える",
+    "reading": "なえる",
+    "meaning": "萎靡，无力",
+    "example": "長い沈黙の中で、私の言葉は萎えていった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "溺れる",
+    "reading": "おぼれる",
+    "meaning": "溺水；沉溺于",
+    "example": "彼は悲しみに溺れるように、部屋にこもった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "揺蕩う",
+    "reading": "たゆたう",
+    "meaning": "摇曳，飘荡不定",
+    "example": "彼女の心は決断と逡巡の間を揺蕩っていた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "煌めく",
+    "reading": "きらめく",
+    "meaning": "闪耀，晶莹发光",
+    "example": "夜の海が月の光を受けて煌めいていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "瞬く",
+    "reading": "またたく",
+    "meaning": "眨眼；（星光）闪烁",
+    "example": "星が瞬くたびに、彼女は何かを数えていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "微笑む",
+    "reading": "ほほえむ",
+    "meaning": "微笑",
+    "example": "彼女は何も言わず、ただ静かに微笑んだ。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "頷く",
+    "reading": "うなずく",
+    "meaning": "点头（表示同意）",
+    "example": "私の話を聞いて、彼はゆっくりと頷いた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "俯く",
+    "reading": "うつむく",
+    "meaning": "低下头，垂头",
+    "example": "彼女は恥ずかしそうに俯いた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "仰ぐ",
+    "reading": "あおぐ",
+    "meaning": "仰望；仰仗",
+    "example": "空を仰ぐと、雲ひとつない青さが広がっていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "覗く",
+    "reading": "のぞく",
+    "meaning": "窥视，偷看",
+    "example": "ドアの隙間から光が覗いていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "霞む",
+    "reading": "かすむ",
+    "meaning": "朦胧，模糊",
+    "example": "涙で視界が霞み、何も見えなくなった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "澄む",
+    "reading": "すむ",
+    "meaning": "澄清，清澈",
+    "example": "秋の空気は冷たく澄んでいた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "萎む",
+    "reading": "しぼむ",
+    "meaning": "枯萎，消退",
+    "example": "花びらが萎んでいくように、彼女の笑顔も消えた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "解れる",
+    "reading": "ほぐれる",
+    "meaning": "松弛，解开，缓和",
+    "example": "話しているうちに、緊張が少しずつ解れていった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "怯む",
+    "reading": "ひるむ",
+    "meaning": "退缩，畏缩",
+    "example": "彼の鋭い視線に、私は一瞬怯んだ。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "怯える",
+    "reading": "おびえる",
+    "meaning": "恐惧，战战兢兢",
+    "example": "暗闇の中で、彼女は何かに怯えていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "蹲る",
+    "reading": "うずくまる",
+    "meaning": "蜷缩，蹲伏",
+    "example": "彼は部屋の隅に蹲って、動かなかった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "呟く",
+    "reading": "つぶやく",
+    "meaning": "喃喃自语，低喃",
+    "example": "「もう終わりだ」と彼は小さく呟いた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "翻る",
+    "reading": "ひるがえる",
+    "meaning": "翻转，飘动",
+    "example": "風に旗が翻り、影が地面を走った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "噎せる",
+    "reading": "むせる",
+    "meaning": "哽咽，被呛到",
+    "example": "泣きすぎて噎せながら、それでも話し続けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "見惚れる",
+    "reading": "みとれる",
+    "meaning": "看呆了，痴迷地凝视",
+    "example": "彼女の踊りに、観客は皆見惚れた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "惑う",
+    "reading": "まどう",
+    "meaning": "迷惑，困惑，迷失",
+    "example": "何が正しいのか分からず、私は惑い続けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "震える",
+    "reading": "ふるえる",
+    "meaning": "颤抖，发抖",
+    "example": "寒さからではなく、恐怖で体が震えていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "崩れる",
+    "reading": "くずれる",
+    "meaning": "崩塌，瓦解",
+    "example": "積み上げてきたものが、一瞬で崩れた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "傾く",
+    "reading": "かたむく",
+    "meaning": "倾斜；倾向于",
+    "example": "夕陽に向かって、木が一方に傾いていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "遮る",
+    "reading": "さえぎる",
+    "meaning": "遮挡，阻断，打断（话）",
+    "example": "彼女の言葉を遮るように、電話が鳴った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "歪む",
+    "reading": "ゆがむ",
+    "meaning": "扭曲，变形，（内心）扭曲",
+    "example": "悲しみで顔が歪み、声が出なかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "滲み込む",
+    "reading": "にじみこむ",
+    "meaning": "渗入，浸透",
+    "example": "悲しさが骨の奥まで滲み込んでいくようだった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "踏み入れる",
+    "reading": "ふみいれる",
+    "meaning": "踏入，涉足",
+    "example": "誰も踏み入れたことのない領域に、彼は足を踏み入れた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "見据える",
+    "reading": "みすえる",
+    "meaning": "盯住，凝视；看准",
+    "example": "彼女は遠くを見据えたまま、何も答えなかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "漏れる",
+    "reading": "もれる",
+    "meaning": "泄露，漏出，流露",
+    "example": "ドアの隙間から、笑い声が漏れてきた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "溶ける",
+    "reading": "とける",
+    "meaning": "融化，溶解；（心）化开",
+    "example": "全てが溶けるように、意識が遠のいていった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "抗う",
+    "reading": "あらがう",
+    "meaning": "抵抗，抗拒",
+    "example": "運命に抗うことの虚しさを、彼はよく知っていた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "蔓延る",
+    "reading": "はびこる",
+    "meaning": "蔓延，猖獗",
+    "example": "不安が街に蔓延り、人々は互いを疑い始めた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "彷徨う",
+    "reading": "さまよう",
+    "meaning": "徘徊，漂泊",
+    "example": "彼は目的もなく、夜の街を彷徨い続けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "焦がれる",
+    "reading": "こがれる",
+    "meaning": "渴望，相思",
+    "example": "会えない日々が続くほど、彼女に焦がれた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "朽ちる",
+    "reading": "くちる",
+    "meaning": "腐朽，衰败",
+    "example": "古い木の扉は長年の雨風に朽ちていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "凍りつく",
+    "reading": "こおりつく",
+    "meaning": "僵住，（因恐惧）冻结",
+    "example": "彼の言葉に、私はその場で凍りついた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "奏でる",
+    "reading": "かなでる",
+    "meaning": "奏响，弹奏",
+    "example": "窓の外で誰かがピアノを奏でていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "紡ぐ",
+    "reading": "つむぐ",
+    "meaning": "纺织；编织（故事、语言）",
+    "example": "彼女は言葉を紡ぐように、ゆっくりと話した。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "滴る",
+    "reading": "したたる",
+    "meaning": "滴落，滴淌",
+    "example": "雨粒が窓ガラスを滴り落ちていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "燻る",
+    "reading": "くすぶる",
+    "meaning": "闷烧；（情绪）郁积",
+    "example": "心の奥で、古い怒りがまだ燻っていた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "喘ぐ",
+    "reading": "あえぐ",
+    "meaning": "喘息，挣扎",
+    "example": "走り続けた彼は息を喘がせて立ち止まった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "縺れる",
+    "reading": "もつれる",
+    "meaning": "纠缠，混乱",
+    "example": "話が縺れて、もう何も分からなくなった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "掠れる",
+    "reading": "かすれる",
+    "meaning": "（声音）沙哑，模糊",
+    "example": "泣きすぎて、声が掠れていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "軋む",
+    "reading": "きしむ",
+    "meaning": "嘎吱作响；（心）摩擦",
+    "example": "古い床が軋む音が、静寂を破った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "疼く",
+    "reading": "うずく",
+    "meaning": "隐隐作痛",
+    "example": "古い傷が、雨の日にはまだ疼く。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "聳える",
+    "reading": "そびえる",
+    "meaning": "耸立，高耸",
+    "example": "山が霧の中に静かに聳えていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "噎ぶ",
+    "reading": "むせぶ",
+    "meaning": "哽咽（文语）",
+    "example": "彼女は噎ぶように泣き、言葉が出なかった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "苛む",
+    "reading": "さいなむ",
+    "meaning": "折磨，煎熬",
+    "example": "罪悪感が彼を長年苛み続けた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "噛み締める",
+    "reading": "かみしめる",
+    "meaning": "深刻体会，咬紧牙关",
+    "example": "その言葉の意味を、彼はゆっくりと噛み締めた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "塞ぎ込む",
+    "reading": "ふさぎこむ",
+    "meaning": "郁郁寡欢，闷闷不乐",
+    "example": "彼女は一週間ほど部屋に塞ぎ込んでいた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "途絶える",
+    "reading": "とだえる",
+    "meaning": "中断，消失",
+    "example": "彼女からの連絡が、ある日突然途絶えた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "立ちすくむ",
+    "reading": "たちすくむ",
+    "meaning": "僵立，动弹不得",
+    "example": "予想外の光景に、彼は入口で立ちすくんだ。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "汲み取る",
+    "reading": "くみとる",
+    "meaning": "领会，体察（他人心情）",
+    "example": "彼女の沈黙に込められた意味を、私は汲み取れなかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "吹き抜ける",
+    "reading": "ふきぬける",
+    "meaning": "（风）穿过，吹透",
+    "example": "冷たい風が廊下を吹き抜けていった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "差し込む",
+    "reading": "さしこむ",
+    "meaning": "（光）射入；刺痛",
+    "example": "夕暮れの光が部屋の隅まで差し込んでいた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "向き合う",
+    "reading": "むきあう",
+    "meaning": "面对，正视",
+    "example": "彼は初めて、自分の過去と向き合った。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "寄り添う",
+    "reading": "よりそう",
+    "meaning": "依偎，陪伴",
+    "example": "彼女は何も言わず、ただ彼に寄り添った。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "打ち明ける",
+    "reading": "うちあける",
+    "meaning": "坦白，倾诉心声",
+    "example": "誰にも言えなかった秘密を、彼にだけ打ち明けた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "引きずる",
+    "reading": "ひきずる",
+    "meaning": "拖拽；放不下（过去）",
+    "example": "彼はその失敗をずっと引きずっていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "染み渡る",
+    "reading": "しみわたる",
+    "meaning": "渗透，弥漫全身",
+    "example": "静けさが体の奥まで染み渡っていくようだった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "立ち上る",
+    "reading": "たちのぼる",
+    "meaning": "升起，冒出（烟、香气）",
+    "example": "湯気が白く立ち上っていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "絡み合う",
+    "reading": "からみあう",
+    "meaning": "缠绕，纠缠",
+    "example": "二人の運命は複雑に絡み合っていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "溶け合う",
+    "reading": "とけあう",
+    "meaning": "融合，交融",
+    "example": "夜の闇と霧が溶け合って、境界が消えた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "降り注ぐ",
+    "reading": "ふりそそぐ",
+    "meaning": "倾泻，洒下（光、雨）",
+    "example": "午後の光が静かに降り注いでいた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "呼び覚ます",
+    "reading": "よびさます",
+    "meaning": "唤醒，唤起（记忆）",
+    "example": "その匂いが、古い記憶を呼び覚ました。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "打ち解ける",
+    "reading": "うちとける",
+    "meaning": "敞开心扉，消除隔阂",
+    "example": "話しているうちに、二人はすっかり打ち解けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "見守る",
+    "reading": "みまもる",
+    "meaning": "守护，默默关注",
+    "example": "彼女はただ遠くから、彼の背中を見守った。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "重なる",
+    "reading": "かさなる",
+    "meaning": "重叠，层叠",
+    "example": "夢と現実が重なって、区別がつかなくなった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "萎れる",
+    "reading": "しおれる",
+    "meaning": "枯萎，憔悴",
+    "example": "花瓶の花が萎れて、静かに首を垂れていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "滅びる",
+    "reading": "ほろびる",
+    "meaning": "灭亡，消亡",
+    "example": "いつかすべては滅びる、と彼は静かに思った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "惹かれる",
+    "reading": "ひかれる",
+    "meaning": "被吸引，被迷住",
+    "example": "彼女の孤独な雰囲気に、なぜか惹かれた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "立ち尽くす",
+    "reading": "たちつくす",
+    "meaning": "呆立，无法动弹地站着",
+    "example": "彼は何もできず、ただそこに立ち尽くした。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "息づく",
+    "reading": "いきづく",
+    "meaning": "生机勃勃，静静呼吸着",
+    "example": "夜の街は今もひっそりと息づいていた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "見失う",
+    "reading": "みうしなう",
+    "meaning": "失去，迷失",
+    "example": "人混みの中で、彼女の姿を見失った。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "引き裂く",
+    "reading": "ひきさく",
+    "meaning": "撕裂，拆散",
+    "example": "二人の間を、言葉が冷たく引き裂いた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "打ちひしがれる",
+    "reading": "うちひしがれる",
+    "meaning": "极度消沉，被击垮",
+    "example": "知らせを受けた彼は、すっかり打ちひしがれていた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "捩れる",
+    "reading": "ねじれる",
+    "meaning": "扭曲，拧转",
+    "example": "痛みで体が捩れるように感じた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "揺れ動く",
+    "reading": "ゆれうごく",
+    "meaning": "动摇，摇摆不定",
+    "example": "彼女の気持ちは行くべきか留まるべきかで揺れ動いた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "流れ込む",
+    "reading": "ながれこむ",
+    "meaning": "流入，涌入",
+    "example": "窓から夜の空気が静かに流れ込んできた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "飲み込む",
+    "reading": "のみこむ",
+    "meaning": "吞下；压制（情感）",
+    "example": "言いたいことを飲み込んで、彼は黙っていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "息をのむ",
+    "reading": "いきをのむ",
+    "meaning": "屏住呼吸，震惊",
+    "example": "その美しさに思わず息をのんだ。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "踏みとどまる",
+    "reading": "ふみとどまる",
+    "meaning": "踌躇，在边缘驻足",
+    "example": "崖の縁で、彼はかろうじて踏みとどまった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "浸る",
+    "reading": "ひたる",
+    "meaning": "沉浸于，浸泡",
+    "example": "彼は悲しみに浸るように、音楽を聴き続けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "染まる",
+    "reading": "そまる",
+    "meaning": "被染，沾染",
+    "example": "夕焼けに空が赤く染まっていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "澱む",
+    "reading": "よどむ",
+    "meaning": "停滞，沉积",
+    "example": "澱んだ空気の中に、何かが漂っていた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "揺さぶる",
+    "reading": "ゆさぶる",
+    "meaning": "摇动，动摇（心）",
+    "example": "その言葉が彼の心を深く揺さぶった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "騒めく",
+    "reading": "ざわめく",
+    "meaning": "喧嚣，骚动",
+    "example": "会場がざわめき始めた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "迷い込む",
+    "reading": "まよいこむ",
+    "meaning": "迷入，误入",
+    "example": "見知らぬ路地に迷い込んでしまった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "溶け込む",
+    "reading": "とけこむ",
+    "meaning": "融入，融化进去",
+    "example": "彼女はいつの間にか、その風景に溶け込んでいた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "押しつぶす",
+    "reading": "おしつぶす",
+    "meaning": "压碎，压垮",
+    "example": "悲しみが彼を押しつぶしそうだった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "張り裂ける",
+    "reading": "はりさける",
+    "meaning": "（心）要裂开",
+    "example": "胸が張り裂けるような痛みだった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "見届ける",
+    "reading": "みとどける",
+    "meaning": "见证到最后，目送",
+    "example": "彼女はその結末を見届けずに去った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "耐え忍ぶ",
+    "reading": "たえしのぶ",
+    "meaning": "忍耐，默默承受",
+    "example": "彼はすべてを耐え忍んで、何も言わなかった。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "手放す",
+    "reading": "てばなす",
+    "meaning": "放手，放开",
+    "example": "大切なものを手放すことが、どうしてもできなかった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "取り残される",
+    "reading": "とりのこされる",
+    "meaning": "被遗忘，被落下",
+    "example": "時代に取り残されたように、彼は静かに生きていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "浮かび上がる",
+    "reading": "うかびあがる",
+    "meaning": "浮现，涌现",
+    "example": "記憶の中から、彼女の顔が浮かび上がった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "染み付く",
+    "reading": "しみつく",
+    "meaning": "根深蒂固，渗透入骨",
+    "example": "その匂いは記憶に染み付いていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "語りかける",
+    "reading": "かたりかける",
+    "meaning": "倾诉，向…说话",
+    "example": "彼女は誰もいない部屋に向かって語りかけた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "振り払う",
+    "reading": "ふりはらう",
+    "meaning": "甩开，摆脱",
+    "example": "不安を振り払うように、彼は歩き出した。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "押さえ込む",
+    "reading": "おさえこむ",
+    "meaning": "压制，按住",
+    "example": "感情を押さえ込んで、彼は平静を装った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "見逃す",
+    "reading": "みのがす",
+    "meaning": "忽视，错过",
+    "example": "その小さな変化を、私は見逃していた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "打ち消す",
+    "reading": "うちけす",
+    "meaning": "否定，消除",
+    "example": "彼は自分の気持ちを打ち消すように笑った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "思い馳せる",
+    "reading": "おもいはせる",
+    "meaning": "遥想，驰思",
+    "example": "遠い日々に思いを馳せながら、彼は窓を眺めた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "息を潜める",
+    "reading": "いきをひそめる",
+    "meaning": "屏息，潜伏",
+    "example": "彼女は息を潜めて、物音が止むのを待った。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "踏み出す",
+    "reading": "ふみだす",
+    "meaning": "迈出（一步）",
+    "example": "新しい一歩を踏み出す勇気が、なかなか出なかった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "引き返す",
+    "reading": "ひきかえす",
+    "meaning": "返回，折回",
+    "example": "駅を出てから、何度も引き返したくなった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "見抜く",
+    "reading": "みぬく",
+    "meaning": "看穿，洞察",
+    "example": "彼女の嘘を、彼はすぐに見抜いた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "受け止める",
+    "reading": "うけとめる",
+    "meaning": "接受，承受",
+    "example": "その現実を受け止めるのに、時間がかかった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "打ち寄せる",
+    "reading": "うちよせる",
+    "meaning": "涌来，冲击",
+    "example": "波が岸に打ち寄せては、引いていった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "押し黙る",
+    "reading": "おしだまる",
+    "meaning": "沉默不语，一声不吭",
+    "example": "彼は何も言わず、ただ押し黙った。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "感じ取る",
+    "reading": "かんじとる",
+    "meaning": "感受到，察觉到",
+    "example": "彼女の緊張を、私は肌で感じ取った。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "見渡す",
+    "reading": "みわたす",
+    "meaning": "环顾，望遍",
+    "example": "屋上から夜の街を見渡した。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "踏みにじる",
+    "reading": "ふみにじる",
+    "meaning": "践踏，蹂躏",
+    "example": "彼の夢は無残に踏みにじられた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "引き止める",
+    "reading": "ひきとめる",
+    "meaning": "挽留，阻止",
+    "example": "去ろうとする彼女を引き止める言葉が見つからなかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "抱え込む",
+    "reading": "かかえこむ",
+    "meaning": "一人承担，搂住",
+    "example": "一人で全てを抱え込もうとしていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "思い出す",
+    "reading": "おもいだす",
+    "meaning": "想起，回忆",
+    "example": "ふと、あの夏の夜のことを思い出した。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "見下ろす",
+    "reading": "みおろす",
+    "meaning": "俯视，往下看",
+    "example": "橋の上から川を見下ろしていた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "切り捨てる",
+    "reading": "きりすてる",
+    "meaning": "舍弃，割舍",
+    "example": "過去を切り捨てることが、どうしてもできなかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "吸い込まれる",
+    "reading": "すいこまれる",
+    "meaning": "被吸入，被吸引",
+    "example": "彼女の目に吸い込まれるような気がした。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "言い聞かせる",
+    "reading": "いいきかせる",
+    "meaning": "告诫自己，说服",
+    "example": "大丈夫だと、自分に言い聞かせた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "裏切る",
+    "reading": "うらぎる",
+    "meaning": "背叛",
+    "example": "信じていた人に裏切られた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "追い求める",
+    "reading": "おいもとめる",
+    "meaning": "追求，追寻",
+    "example": "彼は幻を追い求めるように、旅を続けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "取り戻す",
+    "reading": "とりもどす",
+    "meaning": "找回，夺回",
+    "example": "失ったものを取り戻す方法が分からなかった。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "打ち震える",
+    "reading": "うちふるえる",
+    "meaning": "颤抖，震颤",
+    "example": "彼女の手は小さく打ち震えていた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "呼び起こす",
+    "reading": "よびおこす",
+    "meaning": "唤起，激起",
+    "example": "その曲は、封じ込めていた感情を呼び起こした。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "かき消える",
+    "reading": "かききえる",
+    "meaning": "消散，无影无踪",
+    "example": "声はすぐに夜の空気にかき消えた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "積み重なる",
+    "reading": "つみかさなる",
+    "meaning": "积累，层叠",
+    "example": "長い年月が積み重なって、今がある。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "鬱ぎ込む",
+    "reading": "ふさぎこむ",
+    "meaning": "心情沉郁",
+    "example": "彼女はここ数日、鬱ぎ込んでいた。",
+    "level": 3,
+    "category": "wago"
+  },
+  {
+    "kanji": "尾を引く",
+    "reading": "おをひく",
+    "meaning": "留下余韵，旷日持久",
+    "example": "その出来事は長く尾を引いた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "問い詰める",
+    "reading": "といつめる",
+    "meaning": "追问，逼问",
+    "example": "彼は黙ったまま、問い詰められ続けた。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "立ち向かう",
+    "reading": "たちむかう",
+    "meaning": "面对，对抗",
+    "example": "彼女は運命に立ち向かうように、前を向いた。",
+    "level": 1,
+    "category": "wago"
+  },
+  {
+    "kanji": "結びつける",
+    "reading": "むすびつける",
+    "meaning": "连结，联系在一起",
+    "example": "二つの記憶を結びつけるものが見つからなかった。",
+    "level": 2,
+    "category": "wago"
+  },
+  {
+    "kanji": "追い縋る",
+    "reading": "おいすがる",
+    "meaning": "追赶着依附，哭喊着追",
+    "example": "彼女の後を追い縋る力も、もう残っていなかった。",
+    "level": 3,
+    "category": "wago"
+  }
+]

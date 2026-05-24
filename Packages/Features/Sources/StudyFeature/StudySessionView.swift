@@ -110,12 +110,12 @@ public struct StudySessionView: View {
     private func cardBack(_ card: Word) -> some View {
         VStack(spacing: AppSpacing.lg) {
             Text(card.meaning)
-                .kyoukashoFont(size: 18)
+                .kaitiFont(size: 18)
                 .foregroundStyle(theme.text)
                 .multilineTextAlignment(.center)
             Divider().background(theme.border)
             Text(card.example)
-                .kyoukashoFont(size: 13).tracking(1)
+                .kaitiFont(size: 13).tracking(1)
                 .foregroundStyle(theme.textFaint)
                 .multilineTextAlignment(.center)
         }

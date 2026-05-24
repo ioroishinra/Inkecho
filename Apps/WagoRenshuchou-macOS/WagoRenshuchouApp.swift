@@ -14,11 +14,12 @@ struct WagoRenshuchouApp: App {
     }()
 
     @State private var router = AppRouter()
+    @AppStorage("appTheme") private var themeName: String = AppTheme.darkInk.rawValue
 
     init() {
         #if DEBUG
-        if NSFont(name: "KleeOne-Regular", size: 12) == nil {
-            print("[WagoRenshuchou] WARNING: KleeOne-Regular not found — check Fonts/ in bundle and ATSApplicationFontsPath in Info.plist")
+        if NSFont(name: "YuKyokasho", size: 12) == nil {
+            print("[WagoRenshuchou] WARNING: YuKyokasho not found — system font may be missing")
         }
         #endif
     }
@@ -46,6 +47,19 @@ struct WagoRenshuchouApp: App {
                     .keyboardShortcut("2", modifiers: .command)
                 Button("統計")    { router.selectedTab = .stats }
                     .keyboardShortcut("3", modifiers: .command)
+            }
+            CommandMenu("テーマ") {
+                ForEach(AppTheme.allCases) { theme in
+                    Button {
+                        themeName = theme.rawValue
+                    } label: {
+                        if themeName == theme.rawValue {
+                            Label(theme.label, systemImage: "checkmark")
+                        } else {
+                            Text(theme.label)
+                        }
+                    }
+                }
             }
         }
 

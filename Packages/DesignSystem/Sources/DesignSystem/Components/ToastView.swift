@@ -1,6 +1,7 @@
 import SwiftUI
 
 public struct ToastView: View {
+    @Environment(\.appTheme) private var theme
     public let message: String
 
     public init(_ message: String) { self.message = message }
@@ -9,7 +10,7 @@ public struct ToastView: View {
         Text(message)
             .kyoukashoFont(size: 11)
             .tracking(1.5)
-            .foregroundStyle(Color(white: 0.65))
+            .foregroundStyle(theme.textFaint)
             .padding(.horizontal, AppSpacing.md)
             .padding(.vertical, AppSpacing.sm)
             .background(.ultraThinMaterial)

@@ -13,6 +13,7 @@
 		238FA046F0F21CBEBBBB6E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BDB86E600EE2D37996A356 /* Assets.xcassets */; };
 		2B74ADC746D04E309676212B /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 493CF2EE79F2048520D17894 /* Persistence */; };
 		646BFE076FEAF3DD98AA1735 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 37D355CC80B382A54645175C /* Persistence */; };
+		6DCD5668BDD47D6F0BD09C3E /* KleeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 303CF54AD8EBA3E10AB245C7 /* KleeOne-Regular.ttf */; };
 		8142C4E9B97A9B546F75BD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC9BADBA35F01A32549EB03 /* Assets.xcassets */; };
 		F5FC56D347D9E5E688D45B9E /* WagoRenshuchouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA933066AF6799C2E0227A90 /* WagoRenshuchouApp.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		185A83C88753156974A8FBE1 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DesignSystem; path = Packages/DesignSystem; sourceTree = SOURCE_ROOT; };
 		18FADB78EA497805A517A3ED /* WagoRenshuchou-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "WagoRenshuchou-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		303B421463D77D4425F67A3B /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Features; path = Packages/Features; sourceTree = SOURCE_ROOT; };
+		303CF54AD8EBA3E10AB245C7 /* KleeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KleeOne-Regular.ttf"; sourceTree = "<group>"; };
 		4A245D690B4702AFBE8E2F4F /* WagoRenshuchou-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WagoRenshuchou-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC9BADBA35F01A32549EB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65915DD04FDA2FBDC897C346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		8181275D565CB280202CFA36 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				303CF54AD8EBA3E10AB245C7 /* KleeOne-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8142C4E9B97A9B546F75BD93 /* Assets.xcassets in Resources */,
+				6DCD5668BDD47D6F0BD09C3E /* KleeOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

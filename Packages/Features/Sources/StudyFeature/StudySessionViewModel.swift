@@ -1,5 +1,9 @@
 import SwiftUI
 import Core
+import OSLog
+import DesignSystem
+
+private let logger = Logger(subsystem: "WagoRenshuchou", category: "StudySessionViewModel")
 
 public enum SlideDirection { case none, left, right }
 
@@ -47,28 +51,58 @@ public final class StudySessionViewModel {
 
     public func skip() {
         guard let card = currentCard else { return }
-        try? studyRepo.record(wordID: card.id, result: .skip)
+        do {
+            try studyRepo.record(wordID: card.id, result: .skip)
+        } catch {
+            logger.error("studyRepo.record skip failed: \(error, privacy: .public)")
+        }
         advance(direction: .left)
     }
 
     public func master() {
         guard let card = currentCard else { return }
-        try? masteryRepo.markMastered(wordID: card.id)
-        try? studyRepo.record(wordID: card.id, result: .mastered)
+        do {
+            try masteryRepo.markMastered(wordID: card.id)
+        } catch {
+            logger.error("masteryRepo.markMastered failed: \(error, privacy: .public)")
+        }
+        do {
+            try studyRepo.record(wordID: card.id, result: .mastered)
+        } catch {
+            logger.error("studyRepo.record mastered failed: \(error, privacy: .public)")
+        }
         masteredCount += 1
         advance(direction: .right)
     }
 
     public func shuffleAll() {
-        guard let words = try? wordRepo.fetchAll() else { return }
+        let words: [Word]
+        do {
+            words = try wordRepo.fetchAll()
+        } catch {
+            logger.error("wordRepo.fetchAll failed in shuffleAll: \(error, privacy: .public)")
+            return
+        }
         deck = DeckShuffler.shuffle(words)
         currentIndex = 0; isFlipped = false
         showToast("全\(words.count)語でシャッフル")
     }
 
     public func shuffleUnmastered() {
-        guard let all = try? wordRepo.fetchAll(),
-              let ids = try? masteryRepo.masteredWordIDs() else { return }
+        let all: [Word]
+        do {
+            all = try wordRepo.fetchAll()
+        } catch {
+            logger.error("wordRepo.fetchAll failed in shuffleUnmastered: \(error, privacy: .public)")
+            return
+        }
+        let ids: Set<UUID>
+        do {
+            ids = try masteryRepo.masteredWordIDs()
+        } catch {
+            logger.error("masteryRepo.masteredWordIDs failed in shuffleUnmastered: \(error, privacy: .public)")
+            return
+        }
         let unmastered = DeckShuffler.filterUnmastered(all, masteredIDs: ids)
         deck = DeckShuffler.shuffle(unmastered)
         currentIndex = 0; isFlipped = false
@@ -76,7 +110,11 @@ public final class StudySessionViewModel {
     }
 
     public func resetProgress() {
-        try? masteryRepo.resetAll()
+        do {
+            try masteryRepo.resetAll()
+        } catch {
+            logger.error("masteryRepo.resetAll failed: \(error, privacy: .public)")
+        }
         loadDeck()
         showToast("リセット完了")
     }
@@ -85,7 +123,7 @@ public final class StudySessionViewModel {
         slideDirection = direction
         isFlipped = false
         Task { @MainActor in
-            try? await Task.sleep(for: .milliseconds(270))
+            try? await Task.sleep(for: AppAnimation.cardAdvanceDelay)
             slideDirection = .none
             let next = currentIndex + 1
             if next < deck.count { currentIndex = next } else { loadDeck() }
@@ -95,7 +133,7 @@ public final class StudySessionViewModel {
     private func showToast(_ msg: String) {
         toast = msg
         Task { @MainActor in
-            try? await Task.sleep(for: .seconds(2))
+            try? await Task.sleep(for: AppAnimation.toastDuration)
             toast = nil
         }
     }

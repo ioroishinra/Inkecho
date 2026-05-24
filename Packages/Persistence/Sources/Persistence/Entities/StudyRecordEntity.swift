@@ -1,5 +1,6 @@
 import SwiftData
 import Foundation
+import Core
 
 @Model
 final class StudyRecordEntity {
@@ -12,6 +13,6 @@ final class StudyRecordEntity {
         self.recordID = UUID()
         self.word = word
         self.result = result.rawValue
-        self.studiedAt = .now
+        self.studiedAt = Date()
     }
 }

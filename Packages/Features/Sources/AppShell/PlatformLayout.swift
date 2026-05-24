@@ -2,12 +2,16 @@ import SwiftUI
 import StudyFeature
 import MasteredListFeature
 import StatsFeature
+import DesignSystem
 
 @MainActor
 public struct PlatformLayout: View {
     let studyVM:    StudySessionViewModel
     let masteredVM: MasteredListViewModel
     let statsVM:    StatsViewModel
+
+    @Environment(AppRouter.self) private var router
+    @Environment(\.appTheme) private var theme
 
     public init(studyVM: StudySessionViewModel,
                 masteredVM: MasteredListViewModel,
@@ -18,41 +22,67 @@ public struct PlatformLayout: View {
     }
 
     public var body: some View {
+        @Bindable var router = router
         #if os(macOS)
-        macOSLayout
+        macOSLayout(router: $router.selectedTab)
         #else
-        iOSLayout
+        iOSLayout(router: $router.selectedTab)
         #endif
     }
 
-    // iPhone / iPad
-    private var iOSLayout: some View {
-        TabView {
+    private func iOSLayout(router: Binding<AppTab>) -> some View {
+        TabView(selection: router) {
             StudySessionView(vm: studyVM)
                 .tabItem { Label("練習", systemImage: "rectangle.on.rectangle") }
-                .tag(0)
+                .tag(AppTab.study)
             NavigationStack { MasteredListView(vm: masteredVM) }
                 .tabItem { Label("習得済み", systemImage: "checkmark.circle") }
-                .tag(1)
+                .tag(AppTab.mastered)
             NavigationStack { StatsView(vm: statsVM) }
                 .tabItem { Label("統計", systemImage: "chart.bar") }
-                .tag(2)
+                .tag(AppTab.stats)
         }
-        .tint(Color(red: 0.78, green: 0.62, blue: 0.38))
+        .tint(Color.appAccent)
     }
 
-    // macOS
-    private var macOSLayout: some View {
+#if os(macOS)
+    private func macOSLayout(router: Binding<AppTab>) -> some View {
         NavigationSplitView {
             List {
-                Label("練習",    systemImage: "rectangle.on.rectangle")
-                Label("習得済み", systemImage: "checkmark.circle")
-                Label("統計",    systemImage: "chart.bar")
+                sidebarRow(tab: .study,    label: "練習",    icon: "rectangle.on.rectangle", router: router)
+                sidebarRow(tab: .mastered, label: "習得済み", icon: "checkmark.circle",       router: router)
+                sidebarRow(tab: .stats,    label: "統計",    icon: "chart.bar",               router: router)
             }
             .listStyle(.sidebar)
             .frame(minWidth: 160)
         } detail: {
-            StudySessionView(vm: studyVM)
+            switch router.wrappedValue {
+            case .study:    StudySessionView(vm: studyVM)
+            case .mastered: MasteredListView(vm: masteredVM)
+            case .stats:    StatsView(vm: statsVM)
+            }
         }
     }
+
+    private func sidebarRow(tab: AppTab, label: String, icon: String, router: Binding<AppTab>) -> some View {
+        let selected = router.wrappedValue == tab
+        return HStack(spacing: 8) {
+            Image(systemName: icon)
+                .foregroundStyle(selected ? theme.accent : theme.textDim)
+            Text(label)
+                .foregroundStyle(selected ? theme.accent : theme.text)
+            Spacer()
+        }
+        .padding(.vertical, 6)
+        .padding(.horizontal, 8)
+        .background(
+            RoundedRectangle(cornerRadius: 6)
+                .fill(selected ? theme.accent.opacity(0.15) : Color.clear)
+        )
+        .contentShape(Rectangle())
+        .onTapGesture { router.wrappedValue = tab }
+        .listRowBackground(Color.clear)
+        .listRowSeparator(.hidden)
+    }
+#endif
 }

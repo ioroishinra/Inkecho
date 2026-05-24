@@ -1,6 +1,7 @@
 import SwiftUI
 
 public struct EmptyStateView: View {
+    @Environment(\.appTheme) private var theme
     public let message: String
     public let buttonLabel: String
     public let action: () -> Void
@@ -14,15 +15,15 @@ public struct EmptyStateView: View {
             Text(message)
                 .kyoukashoFont(size: 14)
                 .tracking(3)
-                .foregroundStyle(Color(white: 0.45))
+                .foregroundStyle(theme.textDim)
             Button(buttonLabel, action: action)
                 .kyoukashoFont(size: 11)
                 .tracking(2)
-                .foregroundStyle(Color(white: 0.40))
+                .foregroundStyle(theme.textFaint)
                 .padding(.horizontal, AppSpacing.xl)
                 .padding(.vertical, 10)
-                .overlay(RoundedRectangle(cornerRadius: 3)
-                    .stroke(Color(white: 0.22), lineWidth: 1))
+                .overlay(RoundedRectangle(cornerRadius: 3).stroke(theme.border, lineWidth: 1))
+                .buttonStyle(.plain)
         }
     }
 }

@@ -1,5 +1,6 @@
 import SwiftData
 import Foundation
+import Core
 
 @Model
 final class WordEntity {

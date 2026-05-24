@@ -57,4 +57,39 @@ final class StatsViewModelTests: XCTestCase {
         sut.load()
         XCTAssertEqual(sut.progress, 0.0)
     }
+
+    // MARK: - Error handling (try? replacement)
+
+    func test_load_whenWordRepoThrows_totalCountRemainsZero() {
+        // Arrange
+        wordRepo.shouldThrow = true
+
+        // Act
+        sut.load()
+
+        // Assert: totalCount must be 0, not crashed silently
+        XCTAssertEqual(sut.totalCount, 0)
+    }
+
+    func test_load_whenMasteryRepoThrows_masteredCountRemainsZero() {
+        // Arrange
+        masteryRepo.shouldThrow = true
+
+        // Act
+        sut.load()
+
+        // Assert
+        XCTAssertEqual(sut.masteredCount, 0)
+    }
+
+    func test_load_whenStudyRepoThrows_studiedCountRemainsZero() {
+        // Arrange
+        studyRepo.shouldThrow = true
+
+        // Act
+        sut.load()
+
+        // Assert
+        XCTAssertEqual(sut.studiedCount, 0)
+    }
 }

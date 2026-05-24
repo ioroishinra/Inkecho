@@ -1,4 +1,5 @@
 import SwiftData
+import Core
 
 @MainActor
 public final class DatabaseSeeder {

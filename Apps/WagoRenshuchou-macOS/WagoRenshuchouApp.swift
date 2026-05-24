@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 import Persistence
 import AppShell
-import StudyFeature
+import DesignSystem
 
 @main
 struct WagoRenshuchouApp: App {
@@ -13,22 +13,44 @@ struct WagoRenshuchouApp: App {
         return c
     }()
 
-    @State private var studyVM: StudySessionViewModel?
+    @State private var router = AppRouter()
+
+    init() {
+        #if DEBUG
+        if NSFont(name: "KleeOne-Regular", size: 12) == nil {
+            print("[WagoRenshuchou] WARNING: KleeOne-Regular not found — check Fonts/ in bundle and ATSApplicationFontsPath in Info.plist")
+        }
+        #endif
+    }
 
     var body: some Scene {
         WindowGroup {
             AppRootView()
                 .modelContainer(container)
-                .preferredColorScheme(.dark)
-                .frame(minWidth: 900, minHeight: 600)
+                .frame(minWidth: 900, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
+                .environment(router)
         }
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentMinSize)
         .commands {
             CommandGroup(replacing: .newItem) {}
-            CommandMenu("表示") {
-                Button("練習") {}    .keyboardShortcut("1", modifiers: .command)
-                Button("習得済み") {}.keyboardShortcut("2", modifiers: .command)
-                Button("統計") {}   .keyboardShortcut("3", modifiers: .command)
+            CommandGroup(replacing: .saveItem) {}
+            CommandGroup(replacing: .undoRedo) {}
+            CommandGroup(replacing: .pasteboard) {}
+            CommandGroup(replacing: .help) {}
+            CommandGroup(after: .sidebar) {
+                Divider()
+                Button("練習")    { router.selectedTab = .study }
+                    .keyboardShortcut("1", modifiers: .command)
+                Button("習得済み") { router.selectedTab = .mastered }
+                    .keyboardShortcut("2", modifiers: .command)
+                Button("統計")    { router.selectedTab = .stats }
+                    .keyboardShortcut("3", modifiers: .command)
             }
+        }
+
+        Settings {
+            ThemeSettingsView()
         }
     }
 }

@@ -5,10 +5,13 @@ import Persistence
 import StudyFeature
 import MasteredListFeature
 import StatsFeature
+import DesignSystem
 
 @MainActor
 public struct AppRootView: View {
     @Environment(\.modelContext) private var ctx
+    @AppStorage("appTheme") private var themeName: String = AppTheme.darkInk.rawValue
+    private var theme: AppTheme { AppTheme(rawValue: themeName) ?? .darkInk }
 
     private var wordRepo:    any WordRepository    { SwiftDataWordRepository(context: ctx) }
     private var masteryRepo: any MasteryRepository { SwiftDataMasteryRepository(context: ctx) }
@@ -25,10 +28,12 @@ public struct AppRootView: View {
             if let svm = studyVM, let mvm = masteredVM, let stvm = statsVM {
                 PlatformLayout(studyVM: svm, masteredVM: mvm, statsVM: stvm)
             } else {
-                Color(red: 0.059, green: 0.051, blue: 0.043)
-                    .ignoresSafeArea()
+                theme.bg.ignoresSafeArea()
             }
         }
+        .environment(\.appTheme, theme)
+        .preferredColorScheme(theme.colorScheme)
+        .tint(theme.accent)
         .onAppear { bootstrap() }
     }
 

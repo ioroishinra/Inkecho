@@ -1,15 +1,16 @@
 import SwiftUI
 
+// Static colour constants matching the default darkInk theme.
+// Views that need dynamic theming read from @Environment(\.appTheme).
 public extension Color {
-    static let appBg       = Color("AppBg",       bundle: .module)
-    static let appAccent   = Color("AppAccent",   bundle: .module)
-    static let appFaint    = Color("AppFaint",    bundle: .module)
-    static let appGhost    = Color("AppGhost",    bundle: .module)
-    static let appBorder   = Color("AppBorder",   bundle: .module)
-}
-
-// Fallback raw values for previews without asset catalog
-public extension ShapeStyle where Self == Color {
-    static var bg: Color     { Color(red: 0.059, green: 0.051, blue: 0.043) }
-    static var accent: Color { Color(red: 0.780, green: 0.620, blue: 0.380) }
+    static let appBg          = AppTheme.darkInk.bg
+    static let appSurface     = AppTheme.darkInk.surface
+    static let appFaint       = AppTheme.darkInk.faint
+    static let appBorder      = AppTheme.darkInk.border
+    static let appText        = AppTheme.darkInk.text
+    static let appTextDim     = AppTheme.darkInk.textDim
+    static let appTextFaint   = AppTheme.darkInk.textFaint
+    static let appTextGhost   = AppTheme.darkInk.textGhost
+    static let appAccent      = AppTheme.darkInk.accent
+    static let appAccentDark  = AppTheme.darkInk.accentDark
 }

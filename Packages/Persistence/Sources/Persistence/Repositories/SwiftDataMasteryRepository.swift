@@ -1,5 +1,6 @@
 import SwiftData
 import Foundation
+import Core
 
 @MainActor
 public final class SwiftDataMasteryRepository: MasteryRepository {

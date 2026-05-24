@@ -3,45 +3,61 @@ import Core
 import DesignSystem
 
 public struct StudySessionView: View {
+    @Environment(\.appTheme) private var theme
     @Bindable var vm: StudySessionViewModel
+    @State private var showSettings = false
 
     public init(vm: StudySessionViewModel) { self.vm = vm }
 
     public var body: some View {
         ZStack {
-            Color(red: 0.059, green: 0.051, blue: 0.043).ignoresSafeArea()
+            theme.bg.ignoresSafeArea()
             content
             if let msg = vm.toast {
-                VStack {
-                    Spacer()
-                    ToastView(msg).padding(.bottom, AppSpacing.xl)
-                }
-                .transition(.opacity)
+                VStack { Spacer(); ToastView(msg).padding(.bottom, AppSpacing.xl) }
+                    .transition(.opacity)
             }
         }
         .onAppear { vm.loadDeck() }
-        .animation(.easeInOut(duration: 0.2), value: vm.toast)
+        .animation(.easeInOut(duration: AppAnimation.toastAppearanceDuration), value: vm.toast)
+        .sheet(isPresented: $showSettings) { ThemeSettingsView() }
     }
 
     @ViewBuilder private var content: some View {
         if vm.isLoading {
             Text("読み込み中")
-                .kyoukashoFont(size: 12)
-                .tracking(4)
-                .foregroundStyle(Color(white: 0.35))
+                .kyoukashoFont(size: 12).tracking(4)
+                .foregroundStyle(theme.textGhost)
         } else {
             VStack(spacing: 0) {
-                header.padding(.horizontal, AppSpacing.xl).padding(.bottom, AppSpacing.md)
-                ProgressBar(progress: vm.progress).padding(.horizontal, AppSpacing.xl)
+                VStack(spacing: 0) {
+                    header.padding(.bottom, AppSpacing.md)
+                    ProgressBar(progress: vm.progress)
+                }
+                .frame(maxWidth: 600)
+                .padding(.horizontal, AppSpacing.xl)
+                .frame(maxWidth: .infinity)
+
                 Spacer().frame(height: AppSpacing.xl)
+
                 if let card = vm.currentCard {
-                    cardArea(card).padding(.horizontal, AppSpacing.xl)
+                    VStack(spacing: AppSpacing.sm) {
+                        FlashCardView(isFlipped: vm.isFlipped, onTap: vm.flip) {
+                            cardFront(card)
+                        } back: {
+                            cardBack(card)
+                        }
+                        .offset(x: slideOffset)
+                        .animation(.easeInOut(duration: AppAnimation.cardFlipDuration), value: vm.slideDirection)
+                        actionButtons
+                        secondaryButtons
+                    }
+                    .frame(maxWidth: 600)
+                    .padding(.horizontal, AppSpacing.xl)
+                    .frame(maxWidth: .infinity)
                 } else {
-                    EmptyStateView(
-                        message: "全語彙を習得しました",
-                        buttonLabel: "もう一度",
-                        action: vm.shuffleAll
-                    )
+                    EmptyStateView(message: "全語彙を習得しました",
+                                   buttonLabel: "もう一度", action: vm.shuffleAll)
                 }
                 Spacer()
             }
@@ -52,38 +68,29 @@ public struct StudySessionView: View {
     private var header: some View {
         HStack(alignment: .lastTextBaseline) {
             Text("和語動詞")
-                .kyoukashoFont(size: 13)
-                .tracking(5)
-                .foregroundStyle(Color(white: 0.35))
+                .kyoukashoFont(size: 13).tracking(5)
+                .foregroundStyle(theme.textGhost)
             Spacer()
             Group {
-                Text("\(vm.masteredCount)").foregroundStyle(Color(white: 0.55))
-                + Text(" / \(vm.totalCount)").foregroundStyle(Color(white: 0.28))
-                + Text("  習得").foregroundStyle(Color(white: 0.30))
+                Text("\(vm.masteredCount)").foregroundStyle(theme.textFaint)
+                + Text(" / \(vm.totalCount)").foregroundStyle(theme.textGhost)
+                + Text("  習得").foregroundStyle(theme.textGhost)
             }
             .kyoukashoFont(size: 12)
-        }
-    }
-
-    private func cardArea(_ card: Word) -> some View {
-        VStack(spacing: AppSpacing.sm) {
-            FlashCardView(isFlipped: vm.isFlipped, onTap: vm.flip) {
-                cardFront(card)
-            } back: {
-                cardBack(card)
+            Button { showSettings = true } label: {
+                Image(systemName: "gearshape")
+                    .font(.system(size: 13))
+                    .foregroundStyle(theme.textGhost)
             }
-            .offset(x: slideOffset)
-            .animation(.easeInOut(duration: 0.25), value: vm.slideDirection)
-
-            actionButtons
-            secondaryButtons
+            .buttonStyle(.plain)
+            .padding(.leading, AppSpacing.sm)
         }
     }
 
     private var slideOffset: CGFloat {
         switch vm.slideDirection {
-        case .left:  return -300
-        case .right: return  300
+        case .left:  return -AppAnimation.cardSlideOffset
+        case .right: return  AppAnimation.cardSlideOffset
         case .none:  return    0
         }
     }
@@ -92,11 +99,10 @@ public struct StudySessionView: View {
         VStack(spacing: AppSpacing.md) {
             Text(card.kanji)
                 .kyoukashoFont(size: 42, weight: .medium)
-                .foregroundStyle(Color(white: 0.88))
+                .foregroundStyle(theme.text)
             Text(card.reading)
-                .kyoukashoFont(size: 16)
-                .tracking(3)
-                .foregroundStyle(Color(white: 0.45))
+                .kyoukashoFont(size: 16).tracking(3)
+                .foregroundStyle(theme.textDim)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
@@ -105,13 +111,12 @@ public struct StudySessionView: View {
         VStack(spacing: AppSpacing.lg) {
             Text(card.meaning)
                 .kyoukashoFont(size: 18)
-                .foregroundStyle(Color(white: 0.82))
+                .foregroundStyle(theme.text)
                 .multilineTextAlignment(.center)
-            Divider().background(Color(white: 0.20))
+            Divider().background(theme.border)
             Text(card.example)
-                .kyoukashoFont(size: 13)
-                .tracking(1)
-                .foregroundStyle(Color(white: 0.38))
+                .kyoukashoFont(size: 13).tracking(1)
+                .foregroundStyle(theme.textFaint)
                 .multilineTextAlignment(.center)
         }
         .padding(AppSpacing.lg)

@@ -1,5 +1,8 @@
 import SwiftUI
 import Core
+import OSLog
+
+private let logger = Logger(subsystem: "WagoRenshuchou", category: "MasteredListViewModel")
 
 @Observable
 @MainActor
@@ -11,6 +14,11 @@ public final class MasteredListViewModel {
     public init(masteryRepo: any MasteryRepository) { self.masteryRepo = masteryRepo }
 
     public func load() {
-        words = (try? masteryRepo.masteredWords()) ?? []
+        do {
+            words = try masteryRepo.masteredWords()
+        } catch {
+            logger.error("masteryRepo.masteredWords failed: \(error, privacy: .public)")
+            words = []
+        }
     }
 }

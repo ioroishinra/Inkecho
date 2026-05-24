@@ -2,6 +2,8 @@ import SwiftUI
 
 public struct ActionButton: View {
     public enum Style { case ghost, accent }
+    @Environment(\.appTheme) private var theme
+
     public let label: String
     public let style: Style
     public let action: () -> Void
@@ -17,25 +19,12 @@ public struct ActionButton: View {
                 .tracking(2)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 12)
+                .foregroundStyle(style == .accent ? theme.accent : theme.textFaint)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 3)
+                        .stroke(style == .accent ? theme.accentDark : theme.border, lineWidth: 1)
+                )
         }
-        .buttonStyle(AppButtonStyle(style: style))
-    }
-}
-
-private struct AppButtonStyle: ButtonStyle {
-    let style: ActionButton.Style
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundStyle(style == .accent
-                ? Color(red: 0.78, green: 0.62, blue: 0.38)
-                : Color(white: 0.55))
-            .background(Color.clear)
-            .overlay(
-                RoundedRectangle(cornerRadius: 3)
-                    .stroke(style == .accent
-                        ? Color(red: 0.50, green: 0.38, blue: 0.20)
-                        : Color(white: 0.22), lineWidth: 1)
-            )
-            .opacity(configuration.isPressed ? 0.7 : 1)
+        .buttonStyle(.plain)
     }
 }

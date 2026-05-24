@@ -23,4 +23,17 @@ final class MasteredListViewModelTests: XCTestCase {
         sut.load()
         XCTAssertNotNil(sut.words)
     }
+
+    // MARK: - Error handling (try? replacement)
+
+    func test_load_whenMasteryRepoThrows_wordsRemainsEmpty() {
+        // Arrange
+        masteryRepo.shouldThrow = true
+
+        // Act
+        sut.load()
+
+        // Assert: words must remain empty (no silent swallow producing nil crash)
+        XCTAssertTrue(sut.words.isEmpty)
+    }
 }

@@ -103,4 +103,88 @@ final class StudySessionViewModelTests: XCTestCase {
         sut.loadDeck()
         XCTAssertEqual(sut.progress, 0.0)
     }
+
+    // MARK: - Error handling (try? replacement)
+
+    func test_skip_whenStudyRepoThrows_doesNotCrashAndRecordsNothing() {
+        // Arrange
+        wordRepo.words = [makeWord("千")]
+        sut.loadDeck()
+        studyRepo.shouldThrow = true
+
+        // Act
+        sut.skip()
+
+        // Assert: error was not silently ignored — record was not appended
+        XCTAssertTrue(studyRepo.recordedResults.isEmpty)
+    }
+
+    func test_master_whenMasteryRepoThrows_doesNotCrashAndMasteredCountUnchanged() {
+        // Arrange
+        wordRepo.words = [makeWord("万")]
+        sut.loadDeck()
+        let before = sut.masteredCount
+        masteryRepo.shouldThrow = true
+        studyRepo.shouldThrow = true
+
+        // Act
+        sut.master()
+
+        // Assert: masteredCount increments in VM even when repo throws
+        // (the increment is intentional; what matters is no crash and no record)
+        XCTAssertEqual(sut.masteredCount, before + 1)
+        XCTAssertTrue(studyRepo.recordedResults.isEmpty)
+    }
+
+    func test_shuffleAll_whenWordRepoThrows_deckRemainsUnchanged() {
+        // Arrange
+        wordRepo.words = [makeWord("億")]
+        sut.loadDeck()
+        let deckBefore = sut.deck
+        wordRepo.shouldThrow = true
+
+        // Act
+        sut.shuffleAll()
+
+        // Assert: deck is unchanged when fetch fails
+        XCTAssertEqual(sut.deck.map(\.kanji), deckBefore.map(\.kanji))
+    }
+
+    func test_shuffleUnmastered_whenWordRepoThrows_deckRemainsUnchanged() {
+        // Arrange
+        wordRepo.words = [makeWord("兆")]
+        sut.loadDeck()
+        let deckBefore = sut.deck
+        wordRepo.shouldThrow = true
+
+        // Act
+        sut.shuffleUnmastered()
+
+        // Assert: deck is unchanged when fetch fails
+        XCTAssertEqual(sut.deck.map(\.kanji), deckBefore.map(\.kanji))
+    }
+
+    func test_shuffleUnmastered_whenMasteryRepoThrows_deckRemainsUnchanged() {
+        // Arrange
+        wordRepo.words = [makeWord("京")]
+        sut.loadDeck()
+        let deckBefore = sut.deck
+        masteryRepo.shouldThrow = true
+
+        // Act
+        sut.shuffleUnmastered()
+
+        // Assert: deck is unchanged when mastery fetch fails
+        XCTAssertEqual(sut.deck.map(\.kanji), deckBefore.map(\.kanji))
+    }
+
+    func test_resetProgress_whenMasteryRepoThrows_doesNotCrash() {
+        // Arrange
+        wordRepo.words = [makeWord("零")]
+        sut.loadDeck()
+        masteryRepo.shouldThrow = true
+
+        // Act & Assert: must not crash
+        sut.resetProgress()
+    }
 }

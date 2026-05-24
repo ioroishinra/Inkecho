@@ -61,9 +61,12 @@ targets:
       path: Apps/WagoRenshuchou-macOS/Info.plist
       properties:
         CFBundleDisplayName: 和語練習帖
+        CFBundleDevelopmentRegion: ja
+        CFBundleLocalizations: [ja, en]
         LSMinimumSystemVersion: "14.0"
         NSHumanReadableCopyright: ""
         NSPrincipalClass: NSApplication
+        ATSApplicationFontsPath: Fonts
     entitlements:
       path: Apps/WagoRenshuchou-macOS/WagoRenshuchou.entitlements
     dependencies:

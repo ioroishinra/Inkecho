@@ -12,11 +12,13 @@ struct WagoRenshuchouApp: App {
         return c
     }()
 
+    @State private var router = AppRouter()
+
     var body: some Scene {
         WindowGroup {
             AppRootView()
                 .modelContainer(container)
-                .preferredColorScheme(.dark)
+                .environment(router)
         }
     }
 }

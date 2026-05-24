@@ -1,5 +1,8 @@
 import SwiftUI
 import Core
+import OSLog
+
+private let logger = Logger(subsystem: "WagoRenshuchou", category: "StatsViewModel")
 
 @Observable
 @MainActor
@@ -24,8 +27,23 @@ public final class StatsViewModel {
     }
 
     public func load() {
-        totalCount   = (try? wordRepo.count()) ?? 0
-        masteredCount = (try? masteryRepo.masteredCount()) ?? 0
-        studiedCount  = (try? studyRepo.totalStudiedCount()) ?? 0
+        do {
+            totalCount = try wordRepo.count()
+        } catch {
+            logger.error("wordRepo.count failed: \(error, privacy: .public)")
+            totalCount = 0
+        }
+        do {
+            masteredCount = try masteryRepo.masteredCount()
+        } catch {
+            logger.error("masteryRepo.masteredCount failed: \(error, privacy: .public)")
+            masteredCount = 0
+        }
+        do {
+            studiedCount = try studyRepo.totalStudiedCount()
+        } catch {
+            logger.error("studyRepo.totalStudiedCount failed: \(error, privacy: .public)")
+            studiedCount = 0
+        }
     }
 }

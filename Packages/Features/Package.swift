@@ -17,16 +17,19 @@ let package = Package(
     ],
     targets: [
         .target(name: "StudyFeature",
-                dependencies: ["Core","Persistence","DesignSystem"],
+                dependencies: ["Core","DesignSystem"],
                 path: "Sources/StudyFeature"),
         .target(name: "MasteredListFeature",
-                dependencies: ["Core","Persistence","DesignSystem"],
+                dependencies: ["Core","DesignSystem"],
                 path: "Sources/MasteredListFeature"),
         .target(name: "StatsFeature",
-                dependencies: ["Core","Persistence","DesignSystem"],
+                dependencies: ["Core","DesignSystem"],
                 path: "Sources/StatsFeature"),
         .target(name: "AppShell",
-                dependencies: ["StudyFeature","MasteredListFeature","StatsFeature"],
+                dependencies: ["StudyFeature","MasteredListFeature","StatsFeature","Persistence"],
                 path: "Sources/AppShell"),
+        .testTarget(name: "FeaturesTests",
+                    dependencies: ["StudyFeature","MasteredListFeature","StatsFeature","Core"],
+                    path: "Tests/FeaturesTests"),
     ]
 )

@@ -1,6 +1,5 @@
 import SwiftUI
 import Core
-import Persistence
 
 @Observable
 @MainActor

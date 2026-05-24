@@ -1,6 +1,5 @@
 import SwiftUI
 import Core
-import Persistence
 
 public enum SlideDirection { case none, left, right }
 

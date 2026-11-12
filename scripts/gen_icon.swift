@@ -43,8 +43,8 @@ func savePNG(_ image: NSImage, to path: String) {
 }
 
 let root   = URL(fileURLWithPath: CommandLine.arguments[1])
-let iosDir = root.appendingPathComponent("Apps/WagoRenshuchou-iOS/Assets.xcassets/AppIcon.appiconset")
-let macDir = root.appendingPathComponent("Apps/WagoRenshuchou-macOS/Assets.xcassets/AppIcon.appiconset")
+let iosDir = root.appendingPathComponent("Apps/Inkecho-iOS/Assets.xcassets/AppIcon.appiconset")
+let macDir = root.appendingPathComponent("Apps/Inkecho-macOS/Assets.xcassets/AppIcon.appiconset")
 
 // iOS — traditional multi-size format
 let iosSizes: [(idiom: String, size: String, scale: String, px: Int)] = [

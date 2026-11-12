@@ -2,7 +2,7 @@ import SwiftUI
 import Core
 import OSLog
 
-private let logger = Logger(subsystem: "WagoRenshuchou", category: "StatsViewModel")
+private let logger = Logger(subsystem: "Inkecho", category: "StatsViewModel")
 
 @Observable
 @MainActor

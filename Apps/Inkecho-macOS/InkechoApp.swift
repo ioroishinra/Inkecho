@@ -5,7 +5,7 @@ import AppShell
 import DesignSystem
 
 @main
-struct WagoRenshuchouApp: App {
+struct InkechoApp: App {
     let container: ModelContainer = {
         guard let c = try? ModelContainer.appContainer() else {
             fatalError("Failed to create ModelContainer")
@@ -19,7 +19,7 @@ struct WagoRenshuchouApp: App {
     init() {
         #if DEBUG
         if NSFont(name: "YuKyokasho", size: 12) == nil {
-            print("[WagoRenshuchou] WARNING: YuKyokasho not found — system font may be missing")
+            print("[Inkecho] WARNING: YuKyokasho not found — system font may be missing")
         }
         #endif
     }

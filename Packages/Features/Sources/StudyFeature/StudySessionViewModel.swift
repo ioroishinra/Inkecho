@@ -3,7 +3,7 @@ import Core
 import OSLog
 import DesignSystem
 
-private let logger = Logger(subsystem: "WagoRenshuchou", category: "StudySessionViewModel")
+private let logger = Logger(subsystem: "Inkecho", category: "StudySessionViewModel")
 
 public enum SlideDirection { case none, left, right }
 

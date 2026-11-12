@@ -1,4 +1,4 @@
-name: WagoRenshuchou
+name: Inkecho
 options:
   bundleIdPrefix: com.fumi
   deploymentTarget:
@@ -20,26 +20,27 @@ packages:
 
 settings:
   base:
+    PRODUCT_NAME: Inkecho
     SWIFT_VERSION: "6.0"
     ENABLE_USER_SCRIPT_SANDBOXING: NO
 
 targets:
-  WagoRenshuchou-iOS:
+  Inkecho-iOS:
     type: application
     platform: iOS
     deploymentTarget: "17.0"
-    sources: [{ path: Apps/WagoRenshuchou-iOS }]
+    sources: [{ path: Apps/Inkecho-iOS }]
     info:
-      path: Apps/WagoRenshuchou-iOS/Info.plist
+      path: Apps/Inkecho-iOS/Info.plist
       properties:
-        CFBundleDisplayName: 和語練習帖
+        CFBundleDisplayName: Inkecho
         UILaunchScreen: {}
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UIAppFonts: [KleeOne-Regular.ttf]
         ITSAppUsesNonExemptEncryption: false
     entitlements:
-      path: Apps/WagoRenshuchou-iOS/WagoRenshuchou.entitlements
+      path: Apps/Inkecho-iOS/Inkecho.entitlements
     dependencies:
       - package: Features
         product: AppShell
@@ -52,22 +53,22 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         TARGETED_DEVICE_FAMILY: "1,2"
 
-  WagoRenshuchou-macOS:
+  Inkecho-macOS:
     type: application
     platform: macOS
     deploymentTarget: "14.0"
-    sources: [{ path: Apps/WagoRenshuchou-macOS }]
+    sources: [{ path: Apps/Inkecho-macOS }]
     info:
-      path: Apps/WagoRenshuchou-macOS/Info.plist
+      path: Apps/Inkecho-macOS/Info.plist
       properties:
-        CFBundleDisplayName: 和語練習帖
+        CFBundleDisplayName: Inkecho
         CFBundleDevelopmentRegion: ja
         CFBundleLocalizations: [ja, en]
         LSMinimumSystemVersion: "14.0"
         NSHumanReadableCopyright: ""
         NSPrincipalClass: NSApplication
     entitlements:
-      path: Apps/WagoRenshuchou-macOS/WagoRenshuchou.entitlements
+      path: Apps/Inkecho-macOS/Inkecho.entitlements
     dependencies:
       - package: Features
         product: AppShell

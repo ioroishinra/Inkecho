@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A50E84E0904E037B72E2264 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 540BEC0BC22FF422C431835A /* Persistence */; };
+		2C7C2C1DE30ED74739D3D9E4 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = C7D95E8D57B5EDA8CF93AB02 /* Persistence */; };
+		4B4DA3D790FDD19E7D9840B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C4D01CAA525D61C81A083 /* Assets.xcassets */; };
+		96B739E9F66D74648623EBD4 /* InkechoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB71CEF6081476F932CB198 /* InkechoApp.swift */; };
+		97F1A42BE5CFF44F9B68C590 /* KleeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3433C2A9F22E6038B42AC517 /* KleeOne-Regular.ttf */; };
+		A933B8E4FAFD27BE114423C4 /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = D5574C05112D83C2207B188C /* AppShell */; };
+		B48D16B89F2F2EC12DE8EA2F /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = BEA0CA7A90FDB002C3A3A776 /* AppShell */; };
+		C104F6C80E1D44DECE5F5E31 /* KleeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90675099804A66C9EF0C45D /* KleeOne-Regular.ttf */; };
+		E332B15F47D02EFB697802EA /* InkechoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AD29CA0BA7FD52DB9AD48C /* InkechoApp.swift */; };
+		E5364E96D7200EA0F5891B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FED042E34EDE9281CA4D615 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		136F05FF47E2ABF6E6C4C819 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DesignSystem; path = Packages/DesignSystem; sourceTree = SOURCE_ROOT; };
+		1A840831DB46FFB4C515879C /* Persistence */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Persistence; path = Packages/Persistence; sourceTree = SOURCE_ROOT; };
+		2BBFFB349A77D312BD95C6F7 /* Inkecho-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inkecho-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3433C2A9F22E6038B42AC517 /* KleeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KleeOne-Regular.ttf"; sourceTree = "<group>"; };
+		359547672EAA51A383749C68 /* Inkecho.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Inkecho.entitlements; sourceTree = "<group>"; };
+		35BEB52FD137EB5CFF2640D0 /* Inkecho.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Inkecho.entitlements; sourceTree = "<group>"; };
+		497A3E689D86840E270C552F /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Packages/Core; sourceTree = SOURCE_ROOT; };
+		51AD29CA0BA7FD52DB9AD48C /* InkechoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkechoApp.swift; sourceTree = "<group>"; };
+		5C2C4D01CAA525D61C81A083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FED042E34EDE9281CA4D615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB27A2F29608F904ED54F0D /* Inkecho-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Inkecho-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94F07C1FD26D8186F32F6B5 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Features; path = Packages/Features; sourceTree = SOURCE_ROOT; };
+		BC459C9271835A060BB334A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C90675099804A66C9EF0C45D /* KleeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KleeOne-Regular.ttf"; sourceTree = "<group>"; };
+		DFB71CEF6081476F932CB198 /* InkechoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkechoApp.swift; sourceTree = "<group>"; };
+		FA5D74B5A062E4B30767CC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48B918050EE89807F481DFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933B8E4FAFD27BE114423C4 /* AppShell in Frameworks */,
+				2C7C2C1DE30ED74739D3D9E4 /* Persistence in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		887143304CCF8E34D5923375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48D16B89F2F2EC12DE8EA2F /* AppShell in Frameworks */,
+				0A50E84E0904E037B72E2264 /* Persistence in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B786ABF2DF46870ECF9941 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				497A3E689D86840E270C552F /* Core */,
+				136F05FF47E2ABF6E6C4C819 /* DesignSystem */,
+				B94F07C1FD26D8186F32F6B5 /* Features */,
+				1A840831DB46FFB4C515879C /* Persistence */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		1F419FEDCDB1A74FF879F893 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4523DD0C013AC8E72E5AAA2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BCF444BA1D85C3737E15976 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C90675099804A66C9EF0C45D /* KleeOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6B606C1310F37005A36F99A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB27A2F29608F904ED54F0D /* Inkecho-iOS.app */,
+				2BBFFB349A77D312BD95C6F7 /* Inkecho-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BCE126C2532661A3F40FED3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BCF444BA1D85C3737E15976 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A39BF24925033875051CDDF /* Inkecho-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6FED042E34EDE9281CA4D615 /* Assets.xcassets */,
+				BC459C9271835A060BB334A1 /* Info.plist */,
+				35BEB52FD137EB5CFF2640D0 /* Inkecho.entitlements */,
+				DFB71CEF6081476F932CB198 /* InkechoApp.swift */,
+				6BCE126C2532661A3F40FED3 /* Resources */,
+			);
+			path = "Inkecho-iOS";
+			sourceTree = "<group>";
+		};
+		914EBBC930CE8FD469B61812 /* Inkecho-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5C2C4D01CAA525D61C81A083 /* Assets.xcassets */,
+				FA5D74B5A062E4B30767CC88 /* Info.plist */,
+				359547672EAA51A383749C68 /* Inkecho.entitlements */,
+				51AD29CA0BA7FD52DB9AD48C /* InkechoApp.swift */,
+				1F419FEDCDB1A74FF879F893 /* Resources */,
+			);
+			path = "Inkecho-macOS";
+			sourceTree = "<group>";
+		};
+		9B7BC9076B9D0EFA28942881 = {
+			isa = PBXGroup;
+			children = (
+				9D40265486637508CB6E5384 /* Apps */,
+				08B786ABF2DF46870ECF9941 /* Packages */,
+				6B606C1310F37005A36F99A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D40265486637508CB6E5384 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				7A39BF24925033875051CDDF /* Inkecho-iOS */,
+				914EBBC930CE8FD469B61812 /* Inkecho-macOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		B4523DD0C013AC8E72E5AAA2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3433C2A9F22E6038B42AC517 /* KleeOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25C2E7A5CC62A356A1A93AF1 /* Inkecho-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D4F120FE414B71A9FD5482 /* Build configuration list for PBXNativeTarget "Inkecho-iOS" */;
+			buildPhases = (
+				0C146891A4B9A8506302D043 /* Sources */,
+				EF4554CD6C5A43CD176E0BE9 /* Resources */,
+				48B918050EE89807F481DFFE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Inkecho-iOS";
+			packageProductDependencies = (
+				D5574C05112D83C2207B188C /* AppShell */,
+				C7D95E8D57B5EDA8CF93AB02 /* Persistence */,
+			);
+			productName = "Inkecho-iOS";
+			productReference = 8BB27A2F29608F904ED54F0D /* Inkecho-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D0C95C796DB1A681B269AEE /* Inkecho-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ABFA7D13B092AED120C9D81 /* Build configuration list for PBXNativeTarget "Inkecho-macOS" */;
+			buildPhases = (
+				44C2F120FF6645BF9307441D /* Sources */,
+				8C89F963D717EB45051D265A /* Resources */,
+				887143304CCF8E34D5923375 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Inkecho-macOS";
+			packageProductDependencies = (
+				BEA0CA7A90FDB002C3A3A776 /* AppShell */,
+				540BEC0BC22FF422C431835A /* Persistence */,
+			);
+			productName = "Inkecho-macOS";
+			productReference = 2BBFFB349A77D312BD95C6F7 /* Inkecho-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35273A6CC2FF93EF7E208C22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = C5FCC0AD23984F4EC137E088 /* Build configuration list for PBXProject "Inkecho" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9B7BC9076B9D0EFA28942881;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3FB8F4565DD8F98F0C8E9D23 /* XCLocalSwiftPackageReference "Packages/Core" */,
+				3B5BFF13F6468239401A40F7 /* XCLocalSwiftPackageReference "Packages/DesignSystem" */,
+				706F52372C21FEE31A392C88 /* XCLocalSwiftPackageReference "Packages/Features" */,
+				4AF4BDD90E1FE01F559AE253 /* XCLocalSwiftPackageReference "Packages/Persistence" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6B606C1310F37005A36F99A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25C2E7A5CC62A356A1A93AF1 /* Inkecho-iOS */,
+				5D0C95C796DB1A681B269AEE /* Inkecho-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C89F963D717EB45051D265A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4DA3D790FDD19E7D9840B7 /* Assets.xcassets in Resources */,
+				97F1A42BE5CFF44F9B68C590 /* KleeOne-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4554CD6C5A43CD176E0BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5364E96D7200EA0F5891B80 /* Assets.xcassets in Resources */,
+				C104F6C80E1D44DECE5F5E31 /* KleeOne-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C146891A4B9A8506302D043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B739E9F66D74648623EBD4 /* InkechoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C2F120FF6645BF9307441D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E332B15F47D02EFB697802EA /* InkechoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C90E08492ED5CD1ACD93C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Apps/Inkecho-macOS/Inkecho.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Apps/Inkecho-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren.macos;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		10039610523A8BF616F05B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Inkecho;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		311FDC9D8AD36D02D080CFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Apps/Inkecho-macOS/Inkecho.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Apps/Inkecho-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren.macos;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		81EF1F4ECFDA63CD2E876A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Inkecho;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		842ED86AE994D4BB11B6C47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Apps/Inkecho-iOS/Inkecho.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Apps/Inkecho-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CD7ACE4B9384EEEA7018526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Apps/Inkecho-iOS/Inkecho.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Apps/Inkecho-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumi.wagoren;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ABFA7D13B092AED120C9D81 /* Build configuration list for PBXNativeTarget "Inkecho-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C90E08492ED5CD1ACD93C3B /* Debug */,
+				311FDC9D8AD36D02D080CFDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C5FCC0AD23984F4EC137E088 /* Build configuration list for PBXProject "Inkecho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10039610523A8BF616F05B17 /* Debug */,
+				81EF1F4ECFDA63CD2E876A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0D4F120FE414B71A9FD5482 /* Build configuration list for PBXNativeTarget "Inkecho-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842ED86AE994D4BB11B6C47A /* Debug */,
+				9CD7ACE4B9384EEEA7018526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3B5BFF13F6468239401A40F7 /* XCLocalSwiftPackageReference "Packages/DesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DesignSystem;
+		};
+		3FB8F4565DD8F98F0C8E9D23 /* XCLocalSwiftPackageReference "Packages/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Core;
+		};
+		4AF4BDD90E1FE01F559AE253 /* XCLocalSwiftPackageReference "Packages/Persistence" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Persistence;
+		};
+		706F52372C21FEE31A392C88 /* XCLocalSwiftPackageReference "Packages/Features" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Features;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		540BEC0BC22FF422C431835A /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+		BEA0CA7A90FDB002C3A3A776 /* AppShell */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppShell;
+		};
+		C7D95E8D57B5EDA8CF93AB02 /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+		D5574C05112D83C2207B188C /* AppShell */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppShell;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 35273A6CC2FF93EF7E208C22 /* Project object */;
+}

@@ -4,7 +4,7 @@ import Persistence
 import AppShell
 
 @main
-struct WagoRenshuchouApp: App {
+struct InkechoApp: App {
     let container: ModelContainer = {
         guard let c = try? ModelContainer.appContainer() else {
             fatalError("Failed to create ModelContainer")

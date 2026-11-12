@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "=== WagoRenshuchou Bootstrap ==="
+echo "=== Inkecho Bootstrap ==="
 
 if ! command -v xcodegen &> /dev/null; then
   echo "Installing XcodeGen..."
@@ -17,5 +17,5 @@ echo "Generating Xcode project..."
 xcodegen generate
 
 echo ""
-echo "Done. Open WagoRenshuchou.xcodeproj in Xcode."
+echo "Done. Open Inkecho.xcodeproj in Xcode."
 echo "Add iCloud + CloudKit capabilities in Signing & Capabilities before first build."
